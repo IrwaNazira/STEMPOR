@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+       background: url("image/6.jpg");
+         background-size: 100%;
+         background-position: 5px -1px;
+  } 
+    </style>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+<body>
+  <div class="w3-container w3-teal w3-animate-right w3-center ">
+    <h1>Registration Form </h1>
+  </div>
+  <br>
+  <!-- <h2 align="center">Registration Form</h2> -->
+
+  <form action="register.php" enctype="multipart/form-data" method="post" align="center"
+    onsubmit="return confirm('Are you sure you want to register?');">
+    
+
+    <label for="schoolname">School Name:</label><br>
+    <input type="text" id="schoolname" name="schoolname" value="" required><br>
+
+    <label for="schoolemail">School Email:</label><br>
+    <input type="text" id="schoolemail" name="schoolemail" value="" required><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" value="" required><br><br>
+
+    <input type="submit" value="Submit" class="button w3-teal">
+  </form>
+  <p align="center">Already register?<a  href="index.html"> Login</a></p>
+
+</body>
+
+</html>
